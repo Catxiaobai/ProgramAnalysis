@@ -1,0 +1,49 @@
+// comment
+digraph CFG {
+	graph [rankdir=TB]
+	node [color=black fontcolor=black fontname=FangSong fontsize=12 shape=box style=rounded]
+	edge [color="#999999" fontcolor="#888888" fontname=FangSong fontsize=10]
+	8 [label="long i, j, v;"]
+	9 [label="prime[0] = 2;"]
+	10 [label="WriteLong(prime[0]);"]
+	11 [label="i = 1;"]
+	12 [label="v = 3;"]
+	13 [label="while (i < 400)"]
+	15 [label="j = 0;"]
+	16 [label="while (j < i)"]
+	18 [label="if ((prime[j] * prime[j]) > v)"]
+	20 [label="j = i - 1;"]
+	24 [label="if ((v % prime[j]) == 0)"]
+	26 [label="j = i;"]
+	29 [label="j = j + 1;"]
+	31 [label="if (j == i)"]
+	33 [label="prime[i] = v;"]
+	34 [label="WriteLong(v);"]
+	35 [label="i = i + 1;"]
+	37 [label="v = v + 2;"]
+	39 [label="WriteLine();"]
+	0 -> 8
+	8 -> 9
+	9 -> 10
+	10 -> 11
+	11 -> 12
+	12 -> 13
+	13 -> 15
+	15 -> 16
+	16 -> 18
+	18 -> 20
+	18 -> 24
+	24 -> 26
+	26 -> 29
+	24 -> 29
+	20 -> 29
+	29 -> 16
+	16 -> 31
+	31 -> 33
+	33 -> 34
+	34 -> 35
+	31 -> 37
+	35 -> 37
+	37 -> 13
+	13 -> 39
+}

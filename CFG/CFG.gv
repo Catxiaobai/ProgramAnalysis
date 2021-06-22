@@ -1,0 +1,22 @@
+// comment
+digraph CFG {
+	graph [rankdir=TB]
+	node [color=black fontcolor=black fontname=FangSong fontsize=12 shape=box style=rounded]
+	edge [color="#999999" fontcolor="#888888" fontname=FangSong fontsize=10]
+	0 [label="会议"]
+	1 [label="直播会议"]
+	2 [label="直播页面"]
+	a [label="现场会议"]
+	b [label="报名"]
+	i [label="报名"]
+	c [label="选择门票"]
+	d [label="填写需求单"]
+	j [label="填写需求单"]
+	e [label="报名成功" color=red fontcolor=red]
+	f [label="订单页面"]
+	g [label="报名购票成功" color=red fontcolor=red]
+	a -> b
+	b -> d
+	d -> e
+	c -> f [label="已报名"]
+}
