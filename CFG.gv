@@ -1,7 +1,7 @@
 // comment
 digraph CFG {
 	graph [rankdir=TB]
-	node [color=black fontcolor=black fontname=FangSong fontsize=12 shape=box style=rounded]
+	node [color=black fontcolor=black shape=box style=rounded]
 	edge [color="#999999" fontcolor="#888888" fontname=FangSong fontsize=10]
 	8 [label="long i, j, v;"]
 	9 [label="prime[0] = 2;"]
@@ -22,7 +22,6 @@ digraph CFG {
 	35 [label="i = i + 1;"]
 	37 [label="v = v + 2;"]
 	39 [label="WriteLine();"]
-	0 -> 8
 	8 -> 9
 	9 -> 10
 	10 -> 11

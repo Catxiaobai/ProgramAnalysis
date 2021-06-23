@@ -31,7 +31,6 @@ def parse_words(raw_list):
     return words_dict
 
 
-# if-else硬解
 def lexical_analysis(words_dict):
     for index, value in words_dict.items():
         # print(index, value)

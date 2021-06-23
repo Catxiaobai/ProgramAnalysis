@@ -44,11 +44,3 @@ def read_program(filepath, filename):
     return list_program
 
 
-# 格式化源文件
-def format_program():
-    pass
-
-
-if __name__ == '__main__':
-    path = 'example/'
-    name = 'prime'
